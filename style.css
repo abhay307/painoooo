@@ -11,60 +11,33 @@ body {
   height: 100%;
 }
 
-body {
-  overflow: hidden;
-}
-
 main {
-  height: 100%;
   width: 100%;
-  background-color: rgb(50, 50, 50);
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
 }
 main .card {
-  width: 600px;
+  width: 20rem;
+  padding: 30px 30px;
+  box-shadow: 2px 2px 20px #ddd;
   border-radius: 10px;
-  background-color: white;
-  padding: 50px 40px;
 }
-main .card h2 span {
-  color: royalblue;
+main .card .imageContainer {
+  position: relative;
 }
-main .card h2 {
-  font-size: 18px;
-}
-main .card .outer {
-  height: 30px;
+main .card .imageContainer img {
   width: 100%;
-  background-color: rgb(206, 204, 204);
-  border-radius: 50px;
-  margin: 20px 0px;
+  border-radius: 10px;
 }
-main .card .outer .inner {
-  height: inherit;
-  width: 0%;
-  background-color: green;
-  border-radius: inherit;
-}
-main .card .lower {
-  display: flex;
-  justify-content: space-between;
-}
-main .card .lower h2 {
-  font-size: 40px;
-}
-main .card .lower button {
-  background: green;
-  padding: 13px 30px;
-  font-size: 18px;
-  font-weight: 600;
-  color: white;
-  border-radius: 4px;
-  border: none;
-}
-main .card .lower button:active {
-  scale: 0.96;
+main .card .imageContainer #love {
+  font-size: 4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: red;
+  opacity: 0;
+  transition: 0.4s;
 }/*# sourceMappingURL=style.css.map */
