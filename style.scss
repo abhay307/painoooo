@@ -20,7 +20,13 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  h1 {
-    font-size: 40px;
+  flex-direction: column;
+  gap: 20px;
+  #keyboard {
+    span {
+      padding: 10px 20px;
+      border: solid white;
+      font-size: 50px;
+    }
   }
 }
